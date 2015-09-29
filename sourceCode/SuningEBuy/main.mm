@@ -17,10 +17,10 @@
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-#ifdef __i386__
-        return UIApplicationMain(argc, argv, @"DebugViewApp", NSStringFromClass([AppDelegate class]));
-#else
+//#ifdef __i386__
+//        return UIApplicationMain(argc, argv, @"DebugViewApp", NSStringFromClass([AppDelegate class]));
+//#else
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-#endif
+//#endif
     }
 }
