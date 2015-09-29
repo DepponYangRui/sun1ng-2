@@ -283,19 +283,19 @@ static BOOL autoChecked = NO;
                 [self done];
             }
             
-            //是否需要强制更新
-            if ([self isNeedForceUpdate:map])
-            {
-                 [SSAIOSSNDataCollection CustomEventCollection:@"click" keyArray: [NSArray arrayWithObjects:@"clickno", nil]valueArray: [NSArray arrayWithObjects:[NSString stringWithFormat:@"121701"], nil]];
-                [self showMustVersionUpdateDialog:NotNilAndNull(title)?title:nil
-                                          content:showContent];
-            }
-            else
-            {
-                [SSAIOSSNDataCollection CustomEventCollection:@"click" keyArray: [NSArray arrayWithObjects:@"clickno", nil]valueArray: [NSArray arrayWithObjects:[NSString stringWithFormat:@"121701"], nil]];
-                [self showVersionUpdateDialog:NotNilAndNull(title)?title:nil
-                                      content:showContent];
-            }
+//            //是否需要强制更新
+//            if ([self isNeedForceUpdate:map])
+//            {
+//                 [SSAIOSSNDataCollection CustomEventCollection:@"click" keyArray: [NSArray arrayWithObjects:@"clickno", nil]valueArray: [NSArray arrayWithObjects:[NSString stringWithFormat:@"121701"], nil]];
+//                [self showMustVersionUpdateDialog:NotNilAndNull(title)?title:nil
+//                                          content:showContent];
+//            }
+//            else
+//            {
+//                [SSAIOSSNDataCollection CustomEventCollection:@"click" keyArray: [NSArray arrayWithObjects:@"clickno", nil]valueArray: [NSArray arrayWithObjects:[NSString stringWithFormat:@"121701"], nil]];
+//                [self showVersionUpdateDialog:NotNilAndNull(title)?title:nil
+//                                      content:showContent];
+//            }
         }
         else //不需要更新
         { 
